@@ -30,13 +30,12 @@ public class Homework220720 {
         int cal = 40;
         int d1 = 28;
         int d2 = 24;
-        double area1 = area(d1);
-        double area2 = area(d2);
-        double result = (area1 - area2) * cal;
+        double result = (area(d1) - area(d2)) * cal;
         System.out.println(result);
     }
+
     private static double area(int d) {
-        int r = d/2;
+        int r = d / 2;
         double area = 3.14 * r * r;
         return area;
     }
