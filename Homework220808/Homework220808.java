@@ -1,5 +1,7 @@
 package com.telran.berlin.homeworks.Homework220808;
 
+import java.util.Scanner;
+
 public class Homework220808 {
     public static void main(String[] args) {
         // 1:
@@ -21,13 +23,28 @@ public class Homework220808 {
         System.out.println(deviceTest(temperature1, temperature2));
 
        // 4:
-        System.out.println(checkNumber(6,7,12));
+        Scanner sc4 = new Scanner(System.in);
+        System.out.println("Enter Nummber 1: ");
+        int num1 = sc4.nextInt();
+        System.out.println("Enter Nummber 2: ");
+        int num2 = sc4.nextInt();
+        System.out.println("Enter Nummber 3: ");
+        int num3 = sc4.nextInt();
+        System.out.println("Maximum of three numbers: " + checkNumber(num1,num2,num3));
 
         // 5:
-        System.out.println(cinema(12,12));
+        Scanner sc5 = new Scanner(System.in);
+        System.out.println("Enter Age: ");
+        int age = sc5.nextInt();
+        System.out.println("Enter limit: ");
+        int limit = sc5.nextInt();
+        System.out.println("This film allowed for the person: " + cinema(12,12));
 
         //6:  I dont now;
-        System.out.println(leapYear(2020));
+        Scanner sc6 = new Scanner(System.in);
+        System.out.println("Enter Year: ");
+        int year = sc6.nextInt();
+        System.out.println("The year is leap: " + leapYear(year));
     }
 
 
