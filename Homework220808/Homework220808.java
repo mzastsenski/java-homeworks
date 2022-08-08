@@ -38,7 +38,7 @@ public class Homework220808 {
         int age = sc5.nextInt();
         System.out.println("Enter limit: ");
         int limit = sc5.nextInt();
-        System.out.println("This film allowed for the person: " + cinema(12,12));
+        System.out.println("This film allowed for the person: " + cinema(age,limit));
 
         //6:  I dont now;
         Scanner sc6 = new Scanner(System.in);
