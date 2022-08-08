@@ -13,7 +13,7 @@ public class Homework220808 {
         // 2:
         boolean isEdekaOpen = true;
         boolean isReweOpen = true;
-        System.out.println(supermarkt(isEdekaOpen, isReweOpen));
+        System.out.println(supermarket(isEdekaOpen, isReweOpen));
 
         // 3:
         int temperature1 = 101;
@@ -31,7 +31,7 @@ public class Homework220808 {
     }
 
 
-    public static boolean supermarkt(boolean edeka, boolean rewe) {
+    public static boolean supermarket(boolean edeka, boolean rewe) {
         return edeka && rewe;
     }
 
