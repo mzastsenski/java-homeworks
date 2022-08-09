@@ -6,7 +6,7 @@ public class Homeworks220808_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter number1: ");
+        System.out.println("Enter number of Students: ");
         int num = sc.nextInt();
 
         System.out.println("entrance: " + num);

@@ -10,7 +10,7 @@ public class Homework220808 {
         boolean canWalk = false;
 
         if (isWeekend && !isRain) canWalk = true;
-         System.out.println(canWalk);
+        System.out.println(canWalk);
 
         // 2:
         boolean isEdekaOpen = true;
@@ -22,7 +22,7 @@ public class Homework220808 {
         int temperature2 = 99;
         System.out.println(deviceTest(temperature1, temperature2));
 
-       // 4:
+        // 4:
         Scanner sc4 = new Scanner(System.in);
         System.out.println("Enter Nummber 1: ");
         int num1 = sc4.nextInt();
@@ -30,7 +30,7 @@ public class Homework220808 {
         int num2 = sc4.nextInt();
         System.out.println("Enter Nummber 3: ");
         int num3 = sc4.nextInt();
-        System.out.println("Maximum of three numbers: " + checkNumber(num1,num2,num3));
+        System.out.println("Maximum of three numbers: " + checkNumber(num1, num2, num3));
 
         // 5:
         Scanner sc5 = new Scanner(System.in);
@@ -38,9 +38,9 @@ public class Homework220808 {
         int age = sc5.nextInt();
         System.out.println("Enter limit: ");
         int limit = sc5.nextInt();
-        System.out.println("This film allowed for the person: " + cinema(age,limit));
+        System.out.println("This film allowed for the person: " + cinema(age, limit));
 
-        //6:  I dont now;
+        //6:
         Scanner sc6 = new Scanner(System.in);
         System.out.println("Enter Year: ");
         int year = sc6.nextInt();
@@ -49,7 +49,7 @@ public class Homework220808 {
 
 
     public static boolean supermarket(boolean edeka, boolean rewe) {
-        return edeka && rewe;
+        return edeka || rewe;
     }
 
     public static boolean deviceTest(int one, int second) {
@@ -61,10 +61,12 @@ public class Homework220808 {
         else if (b >= a && b >= c) return b;
         else return c;
     }
+
     public static boolean cinema(int age, int limit) {
-       return age >= limit;
+        return age >= limit;
     }
+
     public static boolean leapYear(int year) {
-        return year % 4 == 0;
+        return year % 4 == 0 && year % 100 != 0 && year % 400 == 0;
     }
 }
